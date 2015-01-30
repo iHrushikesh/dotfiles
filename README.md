@@ -9,3 +9,4 @@ sudo apt-get install -y git-core
 git clone https://github.com/iHrushikesh/dotfiles.git
 ./setup.sh  
 ```
+Reboot the instance
