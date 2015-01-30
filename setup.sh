@@ -22,11 +22,9 @@ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 # git pull and install dotfiles as well
 cd $HOME
 if [ -d ./dotfiles/ ]; then
-    mv dotfiles dotfiles.old
+    cp -R dotfiles ~
 fi
-if [ -d .emacs.d/ ]; then
-    mv .emacs.d .emacs.d~
-fi
+
 
 ln -sb dotfiles/.screenrc .
 ln -sb dotfiles/.bash_profile .
