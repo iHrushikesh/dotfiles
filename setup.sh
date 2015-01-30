@@ -18,14 +18,10 @@ sudo apt-get install emacs
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+cp -R dotfiles ~
 
 # git pull and install dotfiles as well
 cd $HOME
-if [ -d ./dotfiles/ ]; then
-    cp -R dotfiles ~
-fi
-
-
 ln -sb dotfiles/.screenrc .
 ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
